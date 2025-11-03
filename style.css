@@ -1,0 +1,27 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  height: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
+}
+
+.header {
+  grid-column: 2/3;
+  background-color: hsl(240, 5%, 25%);
+}
+
+.sidebar {
+  grid-row: 1/-1;
+  background-color: hsl(240, 5%, 10%);
+}
+
+.main {
+  background-color: hsl(240, 5%, 45%);
+}
