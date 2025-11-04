@@ -14,12 +14,40 @@ html {
 
 .header {
   grid-column: 2/3;
-  background-color: hsl(240, 5%, 25%);
+  background-color: hsl(240, 5%, 35%);
 }
 
 .sidebar {
   grid-row: 1/-1;
-  background-color: hsl(240, 5%, 10%);
+  background-color: hsl(240, 5%, 25%);
+  color: white;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  gap: 4rem;
+  align-items: center;
+  padding: 40px;
+}
+
+.dashboard-image {
+  width: 100px;
+  border-radius: 100%;
+}
+
+.sidebar li {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+#settings {
+  padding-top: 4rem;
 }
 
 .main {
