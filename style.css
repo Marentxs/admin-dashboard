@@ -79,7 +79,18 @@ form input {
 
 .header-text {
   display: grid;
+}
+
+.buttons {
+  display: flex;
   align-items: center;
+  gap: 2rem;
+}
+
+button {
+  width: 95px;
+  padding: 8px 20px;
+  border-radius: 20px;
 }
 
 .sidebar {
