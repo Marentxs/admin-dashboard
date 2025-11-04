@@ -15,6 +15,71 @@ html {
 .header {
   grid-column: 2/3;
   background-color: hsl(240, 5%, 35%);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding-left: 3rem;
+}
+
+.upper-header {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 2em 2fr 1fr;
+  gap: 1em;
+  align-items: center;
+}
+
+form input {
+  width: 40rem;
+  height: 2rem;
+  border-radius: 30px;
+  padding: 4px 8px;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  appearance: none;
+}
+
+.upper-right {
+  display: grid;
+  grid-template-columns: 2em 3rem 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.upper-right p {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.michaelscott {
+  width: 3rem;
+  border-radius: 100%;
+}
+
+.header-bottom {
+  display: grid;
+  grid-template-columns: 8rem 1fr;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.header-bottom img {
+  grid-row: 1/-1;
+  width: 8rem;
+  border-radius: 100%;
+}
+
+.header-bottom span {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.title {
+  font-size: 34px;
+}
+
+.header-text {
+  display: grid;
+  align-items: center;
 }
 
 .sidebar {
@@ -33,7 +98,6 @@ html {
 
 .dashboard-image {
   width: 100px;
-  border-radius: 100%;
 }
 
 .sidebar li {
