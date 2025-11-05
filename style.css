@@ -140,13 +140,26 @@ button:active {
   grid-template-columns: 3rem 1fr;
   gap: 1.5rem;
   align-items: center;
-  padding: 10px 0;
+  padding: 10px 0px;
   font-size: 1.2rem;
   font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin: 0 1rem;
+  border-radius: 8px;
+}
+
+.sidebar li:hover {
+  background-color: hsl(219, 24%, 40%);
+}
+
+.sidebar li:active {
+  background-color: hsl(219, 24%, 25%);
+  transform: translateY(1px);
 }
 
 #settings {
-  padding-top: 4rem;
+  margin-top: 4rem;
 }
 
 .main {
@@ -181,6 +194,10 @@ button:active {
   gap: 1rem;
   border-radius: 20px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  margin-top: 0;
 }
 
 .icons {
