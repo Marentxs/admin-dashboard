@@ -13,11 +13,12 @@ html {
 
 .header {
   grid-column: 2/3;
-  background-color: hsl(240, 5%, 35%);
+  background-color: hsl(0, 0%, 92%);
   display: grid;
   grid-template-columns: 2fr 1fr;
   padding-left: 3rem;
   padding-top: 1rem;
+  padding-right: 1rem;
 }
 
 .upper-header {
@@ -29,22 +30,24 @@ html {
 }
 
 form input {
-  width: 40%;
+  width: 60%;
   height: 2rem;
   border-radius: 30px;
   padding: 4px 8px;
-  border: 2px solid rgba(0, 0, 0, 0.4);
+  border: 0;
   appearance: none;
+  background-color: hsl(0, 0%, 80%);
 }
 
 .upper-right {
   display: grid;
-  grid-template-columns: 2em 5rem 1fr;
+  grid-template-columns: 2em 5rem auto;
   gap: 2rem;
   align-items: center;
+  justify-items: start;
 }
 
-.upper-right p {
+.upper-right span {
   font-size: 24px;
   font-weight: 700;
 }
@@ -58,7 +61,7 @@ form input {
   display: grid;
   grid-template-columns: 7rem 1fr;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   padding-bottom: 1rem;
 }
 
@@ -90,9 +93,24 @@ form input {
 
 button {
   font-size: 1rem;
-  width: 110px;
-  padding: 12px 24px;
+  width: 8rem;
+  padding: 12px 2rem;
   border-radius: 30px;
+  background-color: hsl(40, 90%, 50%);
+  transition: all 0.1s ease-in-out;
+  border: 0;
+  box-shadow: 0 4px 0 hsl(40, 90%, 40%);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: hsl(40, 90%, 60%);
+}
+
+button:active {
+  background-color: hsl(40, 90%, 70%);
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 hsl(40, 90%, 40%);
 }
 
 .sidebar {
