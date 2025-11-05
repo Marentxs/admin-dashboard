@@ -135,18 +135,18 @@ button {
   grid-template-rows: 1fr 1fr;
 }
 
-.cards {
+.cards-section {
   grid-row: 1/-1;
+  display: grid;
+  grid-template-rows: 3rem 1fr;
+}
+
+.cards {
   background-color: hsl(0, 30%, 35%);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 0 1rem;
   align-content: space-around;
-}
-
-.card-group {
-  display: flex;
-  flex-direction: column;
 }
 
 .cards h2 {
@@ -162,11 +162,24 @@ button {
   text-align: left;
 }
 
-.cards .card {
+.card {
   background-color: #ffffff;
   color: black;
   text-align: left;
   height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.icons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: end;
+}
+
+.icons img {
+  height: 2.5rem;
 }
 
 .announcements {
