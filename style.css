@@ -24,7 +24,7 @@ html {
 .upper-header {
   grid-column: 1/-1;
   display: grid;
-  grid-template-columns: 2em 3fr 1fr;
+  grid-template-columns: 2em 3.4fr 1fr;
   gap: 1em;
   align-items: center;
 }
@@ -159,15 +159,15 @@ button:active {
 .cards-section {
   grid-row: 1/-1;
   display: grid;
-  grid-template-rows: 3rem 1fr;
+  grid-template-rows: 3rem auto;
   padding: 0 2rem;
 }
 
 .cards {
-  background-color: hsl(0, 30%, 35%);
+  background-color: red;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 0 1rem;
+  gap: 1rem;
   align-content: space-around;
 }
 
@@ -210,9 +210,20 @@ button:active {
 }
 
 .announcements {
-  background-color: hsl(0, 0%, 55%);
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding: 2rem;
+}
+
+.announcements-content {
+  background-color: hsl(0, 0%, 92%);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 20px;
+}
+
+.announcements h4 {
+  margin: 0;
 }
 
 .announcements p {
@@ -221,6 +232,10 @@ button:active {
 
 .announcements h4 {
   margin-bottom: 0;
+}
+
+.no-margin {
+  margin: 0;
 }
 
 .trending {
