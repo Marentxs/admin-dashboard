@@ -135,6 +135,24 @@ button:active {
   width: 100px;
 }
 
+.github {
+  width: 3rem;
+}
+
+.github-link {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  padding: 10px 0; /* Match the li padding */
+}
+
+.github-link:hover {
+  color: inherit;
+}
+
 .sidebar li {
   display: grid;
   grid-template-columns: 3rem 1fr;
