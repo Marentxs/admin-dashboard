@@ -67,7 +67,7 @@ form input {
 
 .header-bottom img {
   grid-row: 1/-1;
-  width: 7rem;
+  width: 6.5rem;
   border-radius: 100%;
 }
 
@@ -152,7 +152,7 @@ button:active {
 .main {
   background-color: hsl(240, 5%, 45%);
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 4fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
 
@@ -218,8 +218,8 @@ button:active {
   padding: 2rem;
   display: flex;
   flex-direction: column;
-
   border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 .announcements h4 {
@@ -234,13 +234,15 @@ button:active {
   margin-bottom: 0;
 }
 
-.no-margin {
-  margin: 0;
+.trending {
+  padding: 0 2rem;
 }
 
-.trending {
-  padding-left: 2rem;
-  background-color: hsl(129, 19%, 40%);
+.trending-content {
+  background-color: hsl(0, 0%, 92%);
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 .trending-card {
@@ -256,11 +258,16 @@ button:active {
   border-radius: 100%;
 }
 
+.no-margin {
+  margin: 0;
+  padding-bottom: 0;
+}
+
 .trending-text {
   display: grid;
 }
 
 .trending-text .name {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.1rem;
 }
