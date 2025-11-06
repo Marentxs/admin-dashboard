@@ -135,6 +135,11 @@ button:active {
   width: 100px;
 }
 
+#odin {
+  width: 3rem;
+  filter: none;
+}
+
 .github {
   width: 3rem;
 }
